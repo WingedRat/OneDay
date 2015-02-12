@@ -193,6 +193,9 @@ screen main_menu:
         textbutton _("Настройки") action ShowMenu("preferences")
         textbutton _("Титры") action ShowMenu("credits")
         textbutton _("Выход") action Quit(confirm=False)
+    frame:
+        yalign .99
+        text "v"+config.version
 
 init -2 python:
 
