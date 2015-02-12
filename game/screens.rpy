@@ -505,57 +505,24 @@ init -2 python:
     style.yesno_label_text.text_align = 0.5
     style.yesno_label_text.layout = "subtitle"
     
+##############################################################################
+# Credits
+#
+# Титры
+    
 screen credits:
-#TODO credits
-    # Умолчания для side_image и two_window
-    default side_image = None
-    default two_window = False
 
-    # Решаем, нужен ли нам двухоконный или однооконный вариант.
-    if not two_window:
+    frame:
+        xpadding 10
+        ypadding 10
+        xalign 0.5
+        yalign 0.5
 
-        # Вариант с одним окном.
-        window:
-            id "window"
-
-            has vbox:
-                style "say_vbox"
-
-            if who:
-                text who id "who"
-
-            text what id "what"
-
-    else:
-
-        # Вариант с двумя окнами.
         vbox:
-            style "say_two_window_vbox"
-
-            if who:
-                window:
-                    style "say_who_window"
-
-                    text who:
-                        id "who"
-
-            window:
-                id "window"
-
-                has vbox:
-                    style "say_vbox"
-
-                text what id "what"
-
-    # Если есть изображение, отобразить его над текстом.
-    if side_image:
-        add side_image
-    else:
-        add SideImage() xalign 0.0 yalign 1.0
-
-    # Использовать быстрое меню.
-    use quick_menu
-
+            text "Идея: @, the Rogue\n\nПрограммирование: @, the Rogue\n\nСценарий: @, the Rogue\n\nФоны: \"Бесконечное лето\"\n\nТестирование: Eldar, researcerhtheone"
+            null height 10
+#            textbutton _("Назад") action Hide()
+        
 
 ##############################################################################
 # Quick Menu

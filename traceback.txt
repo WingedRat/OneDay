@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 163, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 163, in <module>
-    $ ui.interact()
-  File "game/screens.rpy", line 508, in execute
+  File "game/screens.rpy", line 513, in execute
     screen credits:
   File "game/screens.rpy", line 515, in execute
-    if not two_window:
-  File "game/screens.rpy", line 518, in execute
-    window:
+    frame:
   File "game/screens.rpy", line 521, in execute
-    has vbox:
+    vbox:
   File "game/screens.rpy", line 524, in execute
-    if who:
-NameError: name 'who' is not defined
+    textbutton _("Назад") action Hide()
+  File "game/screens.rpy", line 524, in keywords
+    textbutton _("Назад") action Hide()
+TypeError: __init__() takes at least 2 arguments (1 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 163, in script
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
     $ ui.interact()
   File "G:\Programs\renpy-6.18.3-sdk\renpy\ast.py", line 785, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "G:\Programs\renpy-6.18.3-sdk\renpy\python.py", line 1382, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "renpy/common/00gamemenu.rpy", line 163, in <module>
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
     $ ui.interact()
   File "G:\Programs\renpy-6.18.3-sdk\renpy\ui.py", line 247, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
@@ -42,19 +38,19 @@ Full traceback:
     self.update()
   File "G:\Programs\renpy-6.18.3-sdk\renpy\display\screen.py", line 555, in update
     self.screen.function(**self.scope)
-  File "game/screens.rpy", line 508, in execute
+  File "game/screens.rpy", line 513, in execute
     screen credits:
   File "game/screens.rpy", line 515, in execute
-    if not two_window:
-  File "game/screens.rpy", line 518, in execute
-    window:
+    frame:
   File "game/screens.rpy", line 521, in execute
-    has vbox:
+    vbox:
   File "game/screens.rpy", line 524, in execute
-    if who:
+    textbutton _("Назад") action Hide()
+  File "game/screens.rpy", line 524, in keywords
+    textbutton _("Назад") action Hide()
   File "<screen language>", line 524, in <module>
-NameError: name 'who' is not defined
+TypeError: __init__() takes at least 2 arguments (1 given)
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.18.3.761
-One Day dev
+One Day 0.1

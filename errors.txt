@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 56: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        r "Ну, тут все понятно из названия. Человек – обычный человек, никак не связанный с Гамином или Коленкой, впервые там регистрируется. И понимает, что попал в совершенно другой мир, полный странных чуваков, которые ненавидят слово \"инди"\, начинают день с кода и вообще, зачастую живут по ту сторону экрана. Романтика!"
+File "game/screens.rpy", line 513: expected statement.
+    ololo=screen credits:
+         ^
 
 Ren'Py Version: Ren'Py 6.18.3.761
