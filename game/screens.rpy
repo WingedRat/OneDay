@@ -519,9 +519,13 @@ screen credits:
         yalign 0.5
 
         vbox:
+            style_group "credits"
             text "Идея: @, the Rogue\n\nПрограммирование: @, the Rogue\n\nСценарий: @, the Rogue\n\nФоны: \"Бесконечное лето\"\n\nТестирование: Eldar, researcerhtheone"
             null height 10
-#            textbutton _("Назад") action Hide()
+            textbutton _("Назад") action Hide("credits")
+            
+init -2 python:
+    style.credits_button.xalign = 0.5
         
 
 ##############################################################################

@@ -8,10 +8,10 @@ While running game code:
   File "game/screens.rpy", line 521, in execute
     vbox:
   File "game/screens.rpy", line 524, in execute
-    textbutton _("Назад") action Hide()
+    textbutton _("Назад") action Hide(credits)
   File "game/screens.rpy", line 524, in keywords
-    textbutton _("Назад") action Hide()
-TypeError: __init__() takes at least 2 arguments (1 given)
+    textbutton _("Назад") action Hide(credits)
+NameError: name 'credits' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -45,11 +45,11 @@ Full traceback:
   File "game/screens.rpy", line 521, in execute
     vbox:
   File "game/screens.rpy", line 524, in execute
-    textbutton _("Назад") action Hide()
+    textbutton _("Назад") action Hide(credits)
   File "game/screens.rpy", line 524, in keywords
-    textbutton _("Назад") action Hide()
+    textbutton _("Назад") action Hide(credits)
   File "<screen language>", line 524, in <module>
-TypeError: __init__() takes at least 2 arguments (1 given)
+NameError: name 'credits' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.18.3.761

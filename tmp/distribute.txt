@@ -1,3 +1,6 @@
+.git/ matches **/.** (None).
+.gitattributes matches **/.** (None).
+.gitignore matches **/.** (None).
 errors.txt matches errors.txt (None).
 game/ matches ** ([u'all']).
 game/bytecode.rpyb matches ** ([u'all']).
