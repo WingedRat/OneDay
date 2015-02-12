@@ -1,0 +1,60 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 163, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 163, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 508, in execute
+    screen credits:
+  File "game/screens.rpy", line 515, in execute
+    if not two_window:
+  File "game/screens.rpy", line 518, in execute
+    window:
+  File "game/screens.rpy", line 521, in execute
+    has vbox:
+  File "game/screens.rpy", line 524, in execute
+    if who:
+NameError: name 'who' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 163, in script
+    $ ui.interact()
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\ast.py", line 785, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\python.py", line 1382, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00gamemenu.rpy", line 163, in <module>
+    $ ui.interact()
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\ui.py", line 247, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\display\core.py", line 2160, in interact
+    scene_lists.replace_transient()
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\display\core.py", line 669, in replace_transient
+    self.remove(layer, tag)
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\display\core.py", line 943, in remove
+    self.hide_or_replace(layer, remove_index, "hide")
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\display\core.py", line 867, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\display\screen.py", line 423, in _hide
+    self.update()
+  File "G:\Programs\renpy-6.18.3-sdk\renpy\display\screen.py", line 555, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 508, in execute
+    screen credits:
+  File "game/screens.rpy", line 515, in execute
+    if not two_window:
+  File "game/screens.rpy", line 518, in execute
+    window:
+  File "game/screens.rpy", line 521, in execute
+    has vbox:
+  File "game/screens.rpy", line 524, in execute
+    if who:
+  File "<screen language>", line 524, in <module>
+NameError: name 'who' is not defined
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.18.3.761
+One Day dev
