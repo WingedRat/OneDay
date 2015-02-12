@@ -28,7 +28,7 @@ init -1 python hide:
     # Эти управляют именем и версией игры, которые указываются
     # в журналах отладки.
     config.name = "One Day"
-    config.version = "0.2"
+    config.version = "0.3"
 
     #########################################
     # Темы
@@ -186,7 +186,7 @@ init -1 python hide:
 
     ## Музыка, играющая в главном меню.
 
-    # config.main_menu_music = "main_menu_theme.ogg"
+    config.main_menu_music = "Data/music/mainmenu.ogg"
 
 
     #########################################
