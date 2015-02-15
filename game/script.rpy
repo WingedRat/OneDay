@@ -109,7 +109,23 @@ label idea:
     
 
 label decision:
-    #TODO DECISION
+    g "Я понял концепты, спасибо. Я думаю..."
+    menu:
+         "Первый подходит":
+            jump first_ending
+         "Второй подходит":
+            jump second_ending
+         "Третий подходит":
+            jump third_ending
+         "Своя идея":
+            jump idea
+         "Ни один":
+            jump junction
+
+label junction:
+         g "Ничего из этого. Не до новелл сейчас."
+         "На этом разговор закончился, и сколько бы меня не уговаривали, я твердо стоял на своем."
+         jump bad_ending
 
 label diplome:
     g "Идея интересная, но дилом важнее. Извини, но я сосредоточусь на нем."
