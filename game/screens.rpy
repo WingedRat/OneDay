@@ -523,7 +523,7 @@ screen credits:
 
         vbox:
             style_group "credits"
-            text "Идея: @, the Rogue\n\nПрограммирование: @, the Rogue\n\nСценарий: @, the Rogue\n\nФоны: \"Бесконечное лето\"\n\nТестирование: Eldar, researcerhtheone"
+            text "Идея: @, the Rogue\n\nПрограммирование: @, the Rogue\n\nСценарий: @, the Rogue\n\nФоны: \"Бесконечное лето\"\n\nТестирование: Eldar, researchertheone"
             null height 10
             textbutton _("Назад") action Hide("credits")
             
