@@ -1,0 +1,1 @@
+{"layout": null, "name": "One Day", "package": "com.wingedrat.oneday", "orientation": "landscape", "include_pil": false, "expansion": false, "source": false, "icon_name": "One Day", "version": "0.5", "target_version": 8, "permissions": ["VIBRATE"], "include_sqlite": false, "store": "none", "numeric_version": "5"}

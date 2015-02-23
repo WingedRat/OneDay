@@ -24,6 +24,10 @@ init -1 python hide:
     ## запущен в оконном режиме.
 
     config.window_title = u"One Day"
+    
+    ## Иконка окна
+    
+    config.window_icon = "data/ico/icon.png"
 
     # Эти управляют именем и версией игры, которые указываются
     # в журналах отладки.
@@ -186,7 +190,7 @@ init -1 python hide:
 
     ## Музыка, играющая в главном меню.
 
-    config.main_menu_music = "Data/music/mainmenu.ogg"
+    config.main_menu_music = "data/music/mainmenu.ogg"
 
 
     #########################################
