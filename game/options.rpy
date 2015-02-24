@@ -32,7 +32,7 @@ init -1 python hide:
     # Эти управляют именем и версией игры, которые указываются
     # в журналах отладки.
     config.name = "One Day"
-    config.version = "0.7"
+    config.version = "1.0"
 
     #########################################
     # Темы
@@ -344,8 +344,12 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.ogg', 'archive')
+    build.classify('game/**.rpy', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/**.rpyb', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app
     ## build, so they appear in both the app and the zip file.
