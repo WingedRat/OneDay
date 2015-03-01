@@ -50,3 +50,4 @@ project.json
 tmp
 *.save
 persistent
+android.json
