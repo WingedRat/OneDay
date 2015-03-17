@@ -32,7 +32,7 @@ init -1 python hide:
     # Эти управляют именем и версией игры, которые указываются
     # в журналах отладки.
     config.name = "One Day"
-    config.version = "1.1"
+    config.version = "1.2"
 
     #########################################
     # Темы
@@ -164,7 +164,7 @@ init -1 python hide:
 
     ## Установите False если в игре нет звуковых эффектов.
 
-    config.has_sound = True
+    config.has_sound = False
 
     ## Установите False если в игре нет музыки.
 
@@ -304,6 +304,9 @@ init python:
     ## users can click 'mygame.exe' to start the game.
     build.executable_name = "One Day"
 
+    ## Version
+    build.version = config.version
+
     ## If True, Ren'Py will include update information into packages. This
     ## allows the updater to run.
     build.include_update = False
@@ -343,13 +346,17 @@ init python:
     build.classify('**/thumbs.db', None)
 
     ## To archive files, classify them as 'archive'.
-
-    build.classify('game/**.png', 'archive')
-    build.classify('game/**.jpg', 'archive')
-    build.classify('game/**.ogg', 'archive')
-    build.classify('game/**.rpy', 'archive')
-    build.classify('game/**.rpyc', 'archive')
-    build.classify('game/**.rpyb', 'archive')
+    build.archive("scripts", "all")
+    build.archive("interface", "all")
+    build.archive("graphics", "all")
+    build.archive("music", "all")
+    build.classify('game/data/interface/**.**', 'interface')
+    build.classify('game/data/bg/**.**', 'graphics')
+    build.classify('game/data/sprites/**.**', 'graphics')
+    build.classify('game/data/ico/**.**', 'interface')
+    build.classify('game/data/music/**.**', 'music')
+    build.classify('game/**.rpy', 'scripts')
+    build.classify('game/**.rpyc', 'scripts')
 
     ## Files matching documentation patterns are duplicated in a mac app
     ## build, so they appear in both the app and the zip file.
@@ -357,3 +364,5 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
     
+    ## Папка для релиза
+    build.destination = "One Day {version}"
